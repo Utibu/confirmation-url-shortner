@@ -13,6 +13,6 @@ const shortLinkSchema = mongoose.Schema({
     }
 })
 //shortLinkSchema.index({shortid: 1}, { unique: true })
-mongoose.set("debug", true)
+mongoose.set("debug", false)
 
 module.exports = mongoose.model("Link", shortLinkSchema)
